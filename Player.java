@@ -12,9 +12,7 @@ import java.awt.Rectangle;
  *
  * @author Jx
  */
-public class Player {
- 
-    
+public class Player {    
     GamePanel panel;
     int x;
     int y;
@@ -36,8 +34,7 @@ public class Player {
         
         this.panel = panel;
         this.x = x;
-        this.y = y;
-        
+        this.y = y;        
         
         width = 50;
         height = 100;
@@ -82,8 +79,7 @@ public class Player {
                 while(!wall.hitBox.intersects(hitBox)){hitBox.x += Math.signum(xspeed);}
                 hitBox.x -= Math.signum(xspeed);
                 xspeed = 0;
-                x = hitBox.x;
-                
+                x = hitBox.x;                
                 
             }
         }
@@ -96,12 +92,10 @@ public class Player {
                 while(!wall.hitBox.intersects(hitBox)){hitBox.y += Math.signum(yspeed);}
                 hitBox.y -= Math.signum(yspeed);
                 yspeed = 0;
-                y = hitBox.y;
-                
+                y = hitBox.y;                
                 
             }
-        }
-        
+        }     
         
         
         x += xspeed;
